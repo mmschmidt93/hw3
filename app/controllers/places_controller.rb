@@ -8,21 +8,21 @@ class PlacesController < ApplicationController
     #<button>Let's play</button></form>
 
     def index
-        #@companies = Company.all
+        @places = Place.all
     end
 
     def show
-        #@company = Company.find(params["id"])
+        @places = Place.find(params["id"])
     end
 
     def new
-        #@company = Company.new
+        @places = Place.new
     end
 
     def create
-        #@company = Company.new(params["company"])
-        #@company.save
-        #redirect_to "/companies"
+        @places = Place.new(params["name"])
+        @places.save
+        redirect_to "/places"
     end
 
 end

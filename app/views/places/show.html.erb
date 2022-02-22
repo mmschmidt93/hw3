@@ -1,0 +1,9 @@
+<h3><%= @places.name %></h3>
+
+<p>
+  <a href="/places/new?company_id=<%= @places.id %>">New Destination</a>
+</p>
+
+<p><a href="/places">Back to All Destinations</a></p>
+
+<p><%= button_to "Delete this destination", @places, method: :delete %></p>
