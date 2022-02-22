@@ -1,9 +1,5 @@
-<h3><%= @places.name %></h3>
-
-<p>
-  <a href="/places/new?company_id=<%= @places.id %>">New Destination</a>
-</p>
+<h1><%= @place.name %></h1>
 
 <p><a href="/places">Back to All Destinations</a></p>
 
-<p><%= button_to "Delete this destination", @places, method: :delete %></p>
+<p><%= button_to "Delete this destination", @place, method: :delete %></p>
