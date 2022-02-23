@@ -1,8 +1,5 @@
 class PlacesController < ApplicationController
 
-    # in index <form action="/places" method="GET"> <input name = "name" type = text"> 
-    #<button>Let's play</button></form>
-
     def index
         @places = Place.all
     end
